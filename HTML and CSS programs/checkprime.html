@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> eg for java script functions</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var number,i,chk,temp;
+		/* syntax of creating a function */
+		function checkPrime()
+		{
+			number=parseInt(document.getElementById("input1").value);
+
+			if(number)
+			{
+				chk=0;
+
+			temp=document.getElementById('result');
+			temp.style.display="block";
+
+			for(i=2;i<number;i++)
+			{
+				if(number%i==0)
+				{
+					chk++;
+					break;
+				}
+			}
+			if(chk==0)
+			{
+				document.write("prime");
+			}
+			else
+			{
+				document.write("not prime");
+			}
+			}
+		}
+
+	</script>
+	<h1>javascript code to check whether the number is prime or not</h1>
+
+	<p id="input1">Enter a number: <input id="one"></p>
+
+	<p><button type="button" onclick="checkPrime()">Check</button></p>
+
+	
+
+</body>
+</html>

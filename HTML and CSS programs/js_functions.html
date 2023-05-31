@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> eg for java script functions</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var oneValue,twoValue,res,temp;
+		/* syntax of creating a function */
+		function calculate()
+		{
+			oneValue=parseInt(document.getElementById("one").value);
+			twoValue=parseInt(document.getElementById("two").value);
+
+			
+
+			if(oneValue && twoValue)
+			{
+				res=oneValue+twoValue;
+				document.getElementById('a').value=res;
+
+				res=oneValue-twoValue;
+				document.getElementById('s').value=res;
+
+				res=oneValue*twoValue;
+				document.getElementById('m').value=res;
+
+				res=oneValue/twoValue;
+				document.getElementById('d').value=res;
+
+			}
+			temp=document.getElementById('result');
+			temp.style.display="block";
+		}
+
+	</script>
+	
+
+	<p id="input">Enter 1st number: <input id="one"></p>
+	
+	
+	<p id="input">Enter 2nd number: <input id="two"></p>
+	
+
+	
+	<p><button type="button" onclick="calculate()">Calculate</button></p>
+
+	<p id="result" style="display: none;">
+		Addition:<input id="a">
+		Subtraction:<input id="s">
+		Multiplication:<input id="m">
+		Division:<input id="d">
+
+	</p>
+
+
+</body>
+</html>

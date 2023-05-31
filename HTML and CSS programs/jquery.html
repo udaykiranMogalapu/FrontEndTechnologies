@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> jquery eggjampull</title>
+</head>
+<body>
+	<p onclick="callme()">hello everyone this is jquery example</p>
+	<script type="text/javascript">
+		
+		function callme()
+		{
+			document.getElementByTagName("p").value="bye";
+
+		}
+
+		$(document).ready(function ()
+		{
+			$("p").css("background-color","yellow")
+		})
+	</script>
+</body>
+</html>

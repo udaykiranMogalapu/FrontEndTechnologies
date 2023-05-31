@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+</head>
+<body>
+
+	<div id="main">
+		<h1 id="title">welcome</h1>
+		<p id="hint">welcome to my page</p>
+
+	</div>
+	<button type="button" onclick="insertelement()">
+		insert element button
+	</button>
+	<script type="text/javascript">
+		function removeElement()
+		{
+			var newDiv=document.createElement("div");
+			//creating text node
+			var newContent=document.createElement("Before main");
+			//creating the text node to newly created div
+			newDiv.appendChild(newContent);
+			//adding the newly created element
+			var currentDiv=document.getElementById("main")
+			document.body.insertBefore(newDiv)
+		}
+	</script>
+
+</body>
+</html>

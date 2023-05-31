@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		
+		p
+		{
+			font-family: 'Times New Roman' , sans-serif;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			border: 2px solid;
+			text-align: center;
+			top: 20%;
+			left: 20%;
+			color: blue;
+			border-radius: 10px;
+			padding: 3px 10px ;
+			display: inline-block;
+			box-shadow: 1px 1px 2px;
+			cursor: pointer;
+		}
+		
+	</style>
+	<title>
+		first javascript code
+	</title>
+</head>
+<body>
+
+	<p>
+		palyer 1:guest
+	</p>
+
+	<script type="text/javascript">
+		const para = document.querySelector('p');
+
+		para.addEventListener('click',updateName);
+
+		/** defining a function **/
+
+		function updateName()
+		{
+			const name=prompt('Enter your name');
+
+			para.textContent =`player 1 : ${name}`;
+		}
+	</script>
+
+</body>
+</html>

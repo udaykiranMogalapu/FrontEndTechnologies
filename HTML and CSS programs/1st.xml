@@ -1,0 +1,16 @@
+<xml>
+<book>
+	<title>
+		programming typescript
+	</title>
+	<author>
+		boris cherny
+	</author>
+	<price>
+		1100
+	</price>
+	<publication>
+		o'rielly
+	</publication>
+</book>
+</xml>

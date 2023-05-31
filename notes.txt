@@ -1,0 +1,178 @@
+<DOCTYPE HTML> tells the broswer that the file given is html file
+
+basic tags:
+	<b>thsi is a bold txt
+		</b>
+	<strong>
+		this is a strong txt
+	//both are same strong tag and bold tag but difference is strong tag helps search engines that strong txt is important
+
+	</strong>
+
+	<i>
+		italic tag 
+	</i>
+	<em>
+		adds importance to the txt ,it empazies the txt
+	</em>
+	<u>
+		this tx t is underlined
+	</u>
+	<mark>
+		highlights the txt
+	</mark>
+	<tt>
+		teletyped txt
+	</tt>
+	<s>
+		strike tag ,strikes the txt
+	</s>
+	<sup>
+	this super scripted tag is used for mathematics purposes
+	txt goes to the power of the before txt
+	</sup>
+	<sub>
+	txt goes below thw txt before
+	</sub>
+	<del>
+	same as strike tag
+	</del>
+	<abbr>
+		used for abbrevations
+	</abbr>
+	<big>
+		txt incresded by 1 pixcel
+	</big>
+	<small>
+		txt decreasded
+	</small>
+	<dfn>
+		keywords for search engines
+	</dfn>
+	<blockquote cite="">
+		txt from another source
+	</blockquote>
+	<cite> soirce of the above source </cite>
+	<code><pre>
+		"code "
+	</code></pre>
+	<kbd>
+	input from mouse and keyboard
+	</kbd>
+	<address>
+		used for address
+	</address>
+	<bdo>
+		used for bidirectional txt i.r in reverse order
+	</bdo>
+
+
+
+HEADINGS IN HTML:
+	<h1> first heading "very large heading"</h1>
+	<h2> second and little bit small heading</h2>
+"home work"
+-->my resume
+-->career objective
+-->goal
+-->educational details
+-->skill set (technical skills)[hint:use dfn  tag]
+	-->programming languages
+	   tools
+	   interested subhects
+	   office tools
+	   achivements
+	   workshops seminars training programs
+-->certifications
+	(format)
+	use bullets
+-->strengths
+-->hobbies
+-->declaration
+"/home work"
+
+
+date:13th may 2022
+attribute align for <p>
+align="justify"
+aligns the txt
+
+<hr> this tag draws a horizontal line
+attributes for hr tag are color,size and width
+
+<! this is a comment >
+
+https: -->absolute url
+non http -->relative url
+
+txt,image,button these 3 only we apply hyper links
+
+anchor tag
+<a href="any link"> click here "txt to be display in palce of link
+</a>
+
+<a href="mailto:udaymogalapu@gmail.com"> send a mail to me 
+</a>-->this line sends mail 
+
+<a href="tel:9182950829">
+call me</a>
+
+
+date:16th may 2022
+atrget attribute for anchor tag do opens in new tab if we put _blank
+_self the opens in same tab
+
+<button onclick="documnet.location='file name'"> txt</button>
+
+
+html tables:
+<table>
+
+
+</table>
+
+s.no  movie   hero         heroine
+1).   uupena  vaisnav tej  krithi shetty
+2).   sahoo   prabhas      shradha kapoor
+3).	rrr	  ntr,ramcharan alia bhatt
+
+
+
+date 17th may 2022
+<tr> row tag </tr>
+<td> data tag </td>
+<ul> unordered list </ul>
+<li> bullet points (list tag)</li>
+<ol> numerical points </ol>
+<img> if we want image </img>
+<td colspan="3" uses 3 cells>
+<caption> gives caption to our table (we have to put immediately after the table tag) </caption>
+<colgroup> specifies a grp of one or more columns in a table for formating</colgroup>
+<col> nested tag of colgroup </col>
+<thead></thead> 
+<tbody></tbody>
+<tfoot></tfoot>
+
+
+<!--(home task):
+create a big table 
+heading--> supermarket name
+caption-->invoice
+th-->s.no,product name,product id,quantity
+cost per unit,product image,product features
+</tbody>
+<tfoot>total cost:,price bold display
+(font diff in tfoot)
+</tfoot>
+
+-->
+(resume in table format)
+
+
+date:20th may 2022
+
+
+
+
+
+

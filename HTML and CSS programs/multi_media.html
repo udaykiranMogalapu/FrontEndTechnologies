@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>working on multi media</title>
+	<script type="text/javascript">
+		
+		function callMe()
+		{
+			document.getElementById("v1").style.background="yellow"
+		}
+		function notCallMe()
+		{
+			document.getElementById("v1").style.background="red"
+		}
+		function calledMe()
+		{
+			document.getElementById("v1").style.background="black"
+		}
+	</script>
+</head>
+<body id="v1">
+	<video controls onplay="callMe()" src="settings.mp4" width="300" height="300" onpause="notCallMe()" onplaying="calledMe()"></video>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>example for DOM</title>
+	<script type="text/javascript">
+		const x=document.forms["first1"];
+		let text=""
+		for(let i=0;x<i.lenght;i++)
+		{
+			text+=x.elements[i].value+ "<br>"
+		}
+		document.getElementById("demo").innerHTML=text
+	
+	</script>
+</head>
+<body>
+	<h2>java script dom eg</h2>
+<p>enter the html elements by html object collection</p>
+	<form id='first1' >
+		enter first name:
+		<input type="text" name="t1" id="i1" value="kiran">
+		<br>
+		enter second name:
+		<input type="text" name="t2" id="i2" value="uday">
+		<br>
+		<input type="submit" name="sub" id="s1" value="submit" >
+
+	</form>
+	<p>these are the values of input controls of forms</p>
+	<p id="demo"></p>
+</body>
+</html>

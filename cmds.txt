@@ -1,0 +1,121 @@
+enable
+config t
+service password-encryption
+security passwords min-length 10
+hostname R1
+login block-for 180 attempts 4 within 120
+enable secret 5 $1$mERr$Amm/da5NtiazLuZDbgqZ60
+ipv6 unicast-routing
+username Admin1 secret 5 $1$mERr$Ty/EkWXcSXEwIckISrps8/
+no ip domain-lookup
+ip domain-name CCNA-lab.com
+interface GigabitEthernet0/0
+ip address 192.168.0.1 255.255.255.128
+duplex auto
+speed auto
+ipv6 address FE80::1 link-local
+ipv6 address 2001:DB8:ACAD::1/64
+no shutdown
+interface GigabitEthernet0/1
+ip address 192.168.0.129 255.255.255.192
+duplex auto
+speed auto
+ipv6 address FE80::1 link-local
+ipv6 address 2001:DB8:ACAD:1::1/64
+no shutdown
+interface GigabitEthernet0/2
+ip address 192.168.0.193 255.255.255.224
+duplex auto
+speed auto
+ipv6 address FE80::1 link-local
+ipv6 address 2001:DB8:ACAD:2::1/64
+no shutdown
+interface Serial0/0/1
+ip address 172.16.1.2 255.255.255.252
+ipv6 address FE80::1 link-local
+ipv6 address 2001:DB8:2::1/64
+no shutdown
+banner motd #Router R1#
+line con 0
+exec-timeout 5 0
+password 7 0802455D0A1606181C1B0D517F
+login
+line vty 0 4
+exec-timeout 5 0
+login local
+transport input ssh
+exit
+crypto key generate rsa general-keys modulus 1024
+end
+
+
+S1 Configuration
+enable
+conf t
+service password-encryption
+hostname S1
+enable secret 5 $1$mERr$Amm/da5NtiazLuZDbgqZ60
+no ip domain-lookup
+interface Vlan1
+ip address 192.168.0.2 255.255.255.128
+no shutdown
+ip default-gateway 192.168.0.1
+line con 0
+password 7 0802455D0A1606181C1B0D517F
+login
+exec-timeout 5 0
+line vty 0 4
+exec-timeout 5 0
+login
+line vty 5 15
+exec-timeout 5 0
+login
+end
+
+
+S2 Configuration
+enable
+conf t
+service password-encryption
+hostname S2
+enable secret 5 $1$mERr$Amm/da5NtiazLuZDbgqZ60
+no ip domain-lookup
+interface Vlan1
+ip address 192.168.0.130 255.255.255.192
+no shutdown
+ip default-gateway 192.168.0.129
+line con 0
+password 7 0802455D0A1606181C1B0D517F
+login
+exec-timeout 5 0
+line vty 0 4
+exec-timeout 5 0
+login
+line vty 5 15
+exec-timeout 5 0
+login
+end
+
+
+S3 Configuration
+enable
+conf t
+service password-encryption
+hostname S3
+enable secret 5 $1$mERr$Amm/da5NtiazLuZDbgqZ60
+no ip domain-lookup
+interface Vlan1
+ip address 192.168.0.194 255.255.255.224
+no shut
+ip default-gateway 192.168.0.193
+line con 0
+password 7 0802455D0A1606181C1B0D517F
+login
+exec-timeout 5 0
+line vty 0 4
+exec-timeout 5 0
+login
+line vty 5 15
+exec-timeout 5 0
+login
+end

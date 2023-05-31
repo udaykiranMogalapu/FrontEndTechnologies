@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title> eg of combinational selectors</title>
+	<style type="text/css">
+
+		/** combinator css decendant **/
+		
+		div ul
+		{
+			background-color: lightblue;
+			color: red;
+
+		}
+		/** combinator child selector **/
+
+		div > h3
+		{
+			text-align: center;
+			font: bold 15px "courier",small-caps;
+		}
+		/** combinator adjacent sibling selector **/
+		div + p
+		{
+			text-align: right;
+			background-color: lightgreen;
+			font-weight: 15px;
+		}
+		/** combinator general sibling selector **/
+		div ~ h5
+		{
+			background-color: yellow;
+		}
+	</style>
+
+</head>
+<body>
+	<div>
+		this is some text in a div element
+		<h3>
+			list of student sections
+		</h3>
+		<p>stuydents shortlisted for next round</p>
+		<ul>
+			<li>anand</li>
+			<li>bharat</li>
+			<li>vamsi</li>
+			<li>charan</li>
+		</ul>
+	</div>
+	<p>this paragrapgh after div</p>
+
+	<h5>this is a heading level 5vimmediately folloed after </h5>
+
+
+		<div>
+			<h3>
+				list of marks
+			</h3>
+			<ol>
+				<li>91</li>
+				<li>92</li>
+				<li>99</li>
+				<li>98</li>
+			</ol>
+		</div>
+			<p>this is a 2nd paragrapgh after the 1st paragaraph</p>
+
+</body>
+</html>
